@@ -1,0 +1,86 @@
+{
+	"objName": "CM Hip-Hop",
+	"sounds": [{
+			"soundName": "dance snare beat",
+			"soundID": -1,
+			"md5": "562587bdb75e3a8124cdaa46ba0f648b.wav",
+			"sampleCount": 176401,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "cm toprock-a",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d1c38e569daea51e0487624fde8513e0.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 66,
+			"rotationCenterY": 226
+		},
+		{
+			"costumeName": "cm toprock-b",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5b6b72c65c6bd532c212a0d7b9ff437c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 90,
+			"rotationCenterY": 240
+		},
+		{
+			"costumeName": "cm toprock-c",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1352d6f900c53de0a481424c6632ccf1.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 116,
+			"rotationCenterY": 238
+		},
+		{
+			"costumeName": "cm toprock-d",
+			"baseLayerID": -1,
+			"baseLayerMD5": "24b2bf27302df75bb40029432e9aa46b.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 84,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "cm toprock-e",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6bbdec3aab2ba907e0c84d23ae9dd6ce.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 122,
+			"rotationCenterY": 162
+		},
+		{
+			"costumeName": "cm toprock-f",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0800cb903e6ac905ce031f07e47b315b.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 156,
+			"rotationCenterY": 164
+		},
+		{
+			"costumeName": "cm pop-a",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8be4a67b62ce6b801c2b43e72251a943.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 136,
+			"rotationCenterY": 243
+		},
+		{
+			"costumeName": "cm pop-b",
+			"baseLayerID": -1,
+			"baseLayerMD5": "62217af8834c65435cdcfba6034c9a9a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 79,
+			"rotationCenterY": 229
+		}],
+	"currentCostumeIndex": 0,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 1,
+	"direction": 90,
+	"rotationStyle": "normal",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}

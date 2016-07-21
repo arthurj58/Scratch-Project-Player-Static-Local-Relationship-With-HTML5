@@ -1,0 +1,134 @@
+{
+	"objName": "Jouvi Hip-Hop",
+	"sounds": [{
+			"soundName": "dance celebrate2",
+			"soundID": -1,
+			"md5": "0edb8fb88af19e6e17d0f8cf64c1d136.wav",
+			"sampleCount": 176401,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "jouvi stance",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a5bcf1b96e161d93765123863e246665.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 94,
+			"rotationCenterY": 240
+		},
+		{
+			"costumeName": "jouvi top-a",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6bdc8a2e99c3d01450427ae623b26303.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 68,
+			"rotationCenterY": 260
+		},
+		{
+			"costumeName": "jouvi top-b ",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b78e9b06d82e5d0616376e3d4e812026.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 218,
+			"rotationCenterY": 262
+		},
+		{
+			"costumeName": "jouvi top-c",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ff24a5892149aaddd23de8393be3011d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 208,
+			"rotationCenterY": 268
+		},
+		{
+			"costumeName": "jouvi top-d",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7bff2cd2fd420228d392cae807c57b71.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 144,
+			"rotationCenterY": 270
+		},
+		{
+			"costumeName": "jouvi top-e ",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8ca70cbc5bbeeaff79b8f238c5f6399c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 84,
+			"rotationCenterY": 268
+		},
+		{
+			"costumeName": "jouvi chain-a",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a87544fd2ba7943393e717903a6d8c5c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 70,
+			"rotationCenterY": 228
+		},
+		{
+			"costumeName": "jouvi chain-b",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3e67caf72fa3f70df7e2b2691bd664e7.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 68,
+			"rotationCenterY": 74
+		},
+		{
+			"costumeName": "jouvi chain-c",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ea7059016af7c28c7728c9dbaf568ced.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 196,
+			"rotationCenterY": 226
+		},
+		{
+			"costumeName": "jouvi chain-d",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2972846e33c929c49f87232c8e91f587.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 66,
+			"rotationCenterY": 242
+		},
+		{
+			"costumeName": "jouvi chain-e",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6e77e3a012724ae31e56f93aa7b32144.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 66,
+			"rotationCenterY": 240
+		},
+		{
+			"costumeName": "jouvi pop-a",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0bb3a393c729371ec3116dccbbfc18b3.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 108,
+			"rotationCenterY": 258
+		},
+		{
+			"costumeName": "jouvi pop-b",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9fb9d40dfcf809cfe83a22329ea06857.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 78,
+			"rotationCenterY": 262
+		},
+		{
+			"costumeName": "jouvi pop-c",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5729bfcd99e3902e29a3866b6de96d43.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 108,
+			"rotationCenterY": 260
+		}],
+	"currentCostumeIndex": 0,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 1,
+	"direction": 90,
+	"rotationStyle": "normal",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}

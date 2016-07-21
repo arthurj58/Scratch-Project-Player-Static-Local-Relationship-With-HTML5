@@ -1,0 +1,143 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "流行音乐",
+			"soundID": 1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "背景1",
+			"baseLayerID": 4,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "hearts2",
+			"baseLayerID": 5,
+			"baseLayerMD5": "b6602e32d55ed75eaea1b646f61b6c17.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 181
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": 0,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "小刺猬屁屁",
+			"scripts": [[52,
+					19,
+					[["whenGreenFlag"], ["doForever", [["doIf", ["mousePressed"], [["lookLike:", "表情1"]]]]]]]],
+			"sounds": [{
+					"soundName": "喵",
+					"soundID": 0,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "表情2",
+					"baseLayerID": 1,
+					"baseLayerMD5": "034097f072d9b3511cfeeedf14c50aa5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "表情1",
+					"baseLayerID": 2,
+					"baseLayerMD5": "1e36664f268a72298fae6011d24fa3e6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 396,
+					"rotationCenterY": 272
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": -11,
+			"scratchY": -3,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "左眼睛",
+			"scripts": [[40, 32, [["whenGreenFlag"], ["doForever", [["pointTowards:", "_mouse_"]]]]]],
+			"sounds": [{
+					"soundName": "流行音乐",
+					"soundID": 1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "眼睛",
+					"baseLayerID": 3,
+					"baseLayerMD5": "343fb1bcf0e240120d876dacf897fc5d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -6,
+					"rotationCenterY": 4
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 4,
+			"scratchY": -66.05000000000001,
+			"scale": 1,
+			"direction": 42.44130285705104,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "右眼睛",
+			"scripts": [[40, 32, [["whenGreenFlag"], ["doForever", [["pointTowards:", "_mouse_"]]]]]],
+			"sounds": [{
+					"soundName": "流行音乐",
+					"soundID": 1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "眼睛",
+					"baseLayerID": 3,
+					"baseLayerMD5": "343fb1bcf0e240120d876dacf897fc5d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -6,
+					"rotationCenterY": 4
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -64.05000000000001,
+			"scratchY": -68,
+			"scale": 1,
+			"direction": 49.75969790347232,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "MAC 22,0,0,175",
+		"swfVersion": "v447",
+		"videoOn": false,
+		"spriteCount": 3,
+		"scriptCount": 3,
+		"userAgent": "Scratch 2.0 Offline Editor"
+	}
+}

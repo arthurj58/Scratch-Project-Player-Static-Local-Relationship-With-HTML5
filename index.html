@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<title>魔法图书馆</title>
+
+<!-- iPad properties: set width, disable pinch zoom -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="user-scalable=no" width="540">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="stylesheet" href="player.css">
+<link rel="stylesheet" href="index.css">
+
+<script src="http://ajax.useso.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<!-- 初始化播放器-->
+<script type="text/javascript">
+  $(document).ready(function() {
+    //调用project文件夹下的.json项目，默认使用1000.json
+    var project_id = parseInt(location.hash.substr(1)) || 1000;
+    //通过传入project_id的值，寻找对应的.json文件，并把它加载出来
+    var scratch = new Scratch(project_id);
+  });
+</script>
+
+<!-- 播放器具体内容 -->
+<div id="player-container">
+
+    <!-- 播放器标题栏 -->
+    <div id="player-header">
+        <div id="player-header-preload"></div>
+        <div id="player-header-version"></div>
+        <button id="toggle-fullscreen" tabindex="1"></button>
+        <button id="trigger-stop" tabindex="3"></button>
+        <button id="trigger-green-flag" tabindex="2"></button>
+    </div>
+    
+    <!-- 播放器主要内容 -->
+    <div id="player-content">
+        <div id="container"></div>
+        <div id="overlay"></div>
+        <div id="preloader">
+            <div id="preloader-progress"><div id="preloader-progress-bar"></div></div>
+            <div id="preloader-caption">正在加载中，请稍后&hellip;</div>
+            <div id="preloader-details"></div>
+        </div>
+    </div>
+    
+</div>
+
+<h1>魔法图书馆播放器</h1>
+<p>欢迎使用魔法图书馆播放器，播放器理论上在移动平台、PC平台都可以自由使用，微信朋友圈和微博页面应该都没有问题，该播放器还在测试之中，有什么bug和不稳定请尽量向我反馈，谢谢。<br><br>凑凑字数看看UI会不会出错，凑凑字数看看UI会不会出错，凑凑字数看看UI会不会出错，凑凑字数看看UI会不会出错，凑凑字数看看UI会不会出错。</p>
+
+<script src="js/util/Timer.js"></script>
+<script src="js/util/OffsetBuffer.js"></script>
+<script src="js/util/Color.js"></script>
+<script src="js/util/Rectangle.js"></script>
+<script src="js/Sprite.js"></script>
+<script src="js/Reporter.js"></script>
+<script src="js/Stage.js"></script>
+<script src="js/sound/WAVFile.js"></script>
+<script src="js/sound/SoundDecoder.js"></script>
+<script src="js/sound/SoundBank.js"></script>
+<script src="js/sound/NotePlayer.js"></script>
+<script src="soundbank/Instr.js"></script>
+<script src="js/IO.js"></script>
+<script src="js/primitives/VarListPrims.js"></script>
+<script src="js/primitives/MotionAndPenPrims.js"></script>
+<script src="js/primitives/LooksPrims.js"></script>
+<script src="js/primitives/SensingPrims.js"></script>
+<script src="js/primitives/SoundPrims.js"></script>
+<script src="js/primitives/Primitives.js"></script>
+<script src="js/Interpreter.js"></script>
+<script src="js/Runtime.js"></script>
+<script src="js/Scratch.js"></script>

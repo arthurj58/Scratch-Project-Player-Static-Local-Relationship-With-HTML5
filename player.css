@@ -1,0 +1,366 @@
+/* Wrapper wraps the entire player, and the text below and above. Ideally,
+   all CSS selectors would be descendants of #wrapper so that the player
+   is embeddable.
+*/
+#player-container {
+    position: relative;
+    width: 482px;
+    padding: 48px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    /* Before, we accomplished this with e.preventDefault
+     * on the context div.  But, we'd like to use those click events
+     * for some things like reporter sliders.
+     */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*  Control bar above the stage */
+#player-header {
+    width: 480px;
+    height: 38px;
+    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e6e6e6));
+    background: -webkit-linear-gradient(#fff, #e6e6e6);
+    background: -moz-linear-gradient(#fff, #e6e6e6);
+    background: -ms-linear-gradient(#fff, #e6e6e6);
+    background: -o-linear-gradient(#fff, #e6e6e6);
+    background: linear-gradient(#fff, #e6e6e6);
+    border: 1px solid #d1d1d1;
+    border-bottom: 0;
+    border-radius: 7px 7px 0 0;
+}
+
+/* Button styling */
+#player-header button {
+    border: 0;
+    background: center center no-repeat;
+    width: 33px;
+    height: 38px;
+    float: right;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#player-header-preload {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background: url(img/fullScreenOn.png), url(img/greenFlagOn.png), url(img/stopOn.png);
+}
+button#toggle-fullscreen {
+    background-image: url(img/fullScreenOff.png);
+    background-position: 10px 8px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+button#trigger-green-flag {
+    background-image: url(img/greenFlagOff.png);
+}
+button#trigger-green-flag:hover {
+    background-image: url(img/greenFlagOn.png);
+}
+button#trigger-stop {
+    background-image: url(img/stopOff.png);
+}
+button#trigger-stop:hover {
+    background-image: url(img/stopOn.png);
+}
+
+/* Version number */
+#player-header-version {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 45px;
+    text-align: center;
+    color: rgba(0, 0, 0, .4);
+    font: 9px sans-serif;
+}
+
+/* Wrapper for the Stage */
+#player-content {
+    position: relative;
+    border: 1px solid #d1d1d1;
+    border-top: 0;
+    width: 480px;
+    height: 360px;
+}
+
+/* The Stage */
+#container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 360px;
+    cursor: default;
+    overflow: hidden;
+}
+
+/* Pane over the Stage with the green flag on startup */
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 360px;
+    z-index: 10000;
+    background: url(img/playerStartFlag.png) rgba(0, 0, 0, .26) center center no-repeat;
+}
+
+/* Preloader */
+#preloader {
+    position: absolute;
+    z-index: 10001;
+    top: 50%;
+    left: 50%;
+    margin-left: -156px;
+    margin-top: -61px;
+    width: 309px;
+    height: 119px;
+    border: 1px solid rgb(208, 209, 210);
+    background: #fff;
+    border-radius: 12px;
+    -webkit-box-shadow: 4px 4px 6px rgba(0, 0, 0, .5);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, .5);
+    cursor: default;
+}
+#preloader-progress {
+    margin: 24px 30px 14px 29px;
+    background: rgb(185, 187, 189);
+    border-radius: 5px;
+    height: 22px;
+}
+#preloader-progress-bar {
+    height: 22px;
+    background: rgb(0, 161, 216);
+    border-radius: 5px;
+    width: 61.8%;
+}
+#preloader-caption,
+#preloader-details {
+    margin: 14px 0 0 8px;
+    text-align: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, .65);
+}
+#preloader-details {
+    margin: 6px 0 0 4px;
+    font-size: 12px;
+}
+
+/* Reporter styles */
+.reporter-normal {
+    display: inline-block;
+    padding: 2px 7px 3px 5px;
+    background-color: rgb(193, 196, 199);
+    border: 1px solid rgb(148, 145, 145);
+    border-radius: 6px;
+    font: bold 11px/15px sans-serif;
+    color: #000;
+    position: absolute;
+}
+.reporter-inset {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 38px;
+    margin-left: 6px;
+    padding: 1px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    -webkit-box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.7), inset 1px 1px 2px rgba(0, 0, 0, 0.35);
+    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.7), inset 1px 1px 2px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    font: bold 9px/11px sans-serif;
+    height: 11px;
+    color: #fff;
+}
+.reporter-large {
+    display: inline-block;
+    min-width: 40px;
+    padding: 2px 5px 1px 5px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 -3px 3px -3px #fff inset, -3px 0 3px -3px #fff inset, 0 3px 3px -3px #000 inset, 3px 0 3px -3px #000 inset;
+    box-shadow: 0 -3px 3px -3px #fff inset, -3px 0 3px -3px #fff inset, 0 3px 3px -3px #000 inset, 3px 0 3px -3px #000 inset;
+    font-family: bold 15px sans-serif;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+}
+
+/* List watcher styles */
+.list {
+    float: left;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 2px;
+    background-color: #C1C4C7;
+    padding-left: 3px;
+    font: bold 11px sans-serif;
+    position: absolute;
+}
+
+.list .list-title {
+    padding-top: 2px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.list .list-scrollbar-container {
+    float: right;
+    width: 10px;
+    position: relative;
+}
+
+.list .list-scrollbar {
+    position: absolute;
+    top: 0px;
+    width: 10px;
+    background-color: #a8aaad;
+    border-radius: 10px;
+}
+
+.list .list-index {
+    color: rgb(81, 81, 81);
+    float: left;
+    padding: 2px;
+    margin-top: 0px;
+    text-align: right;
+    font: bold 11px;
+}
+
+.list .list-item {
+    float: right;
+    height: 16px;
+    overflow: hidden;
+    margin-bottom: 0px;
+    margin-right: 2px;
+    padding-top: 2px;
+    padding-left: 5px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: #cc5b22;
+    color: white;
+    word-wrap: break-word;
+    font: bolder 11px sans-serif;
+}
+
+.list .list-add {
+    clear: both;
+    background-color: #dedede;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    color: #707070;
+    font: bold 10px sans-serif;
+    text-align: center;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+}
+
+.list .list-length {
+    font-size: 10px;
+    font-weight: normal;
+    text-align: center;
+    color: black;
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+    right: 0px;
+}
+
+/* Say/think bubble styles */
+.bubble-container {
+    position: absolute;
+}
+.bubble {
+    position: relative;
+    display: inline-block;
+    max-width: 120px;
+    min-width: 40px;
+    padding: 6px 11px 6px 11px;
+    border-radius: 10px;
+    background: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+}
+.bubble.say-think-border {
+    border: 3px solid rgb(160, 160, 160);
+}
+.bubble.ask-border, .ask-container {
+    border: 3px solid rgb(74, 173, 222);
+}
+.bubble-ask {
+    position: absolute;
+    margin-top: -3px;
+    margin-left: 8px;
+    width: 44px;
+    height: 18px;
+    background: url(img/ask-bottom.png) transparent no-repeat;
+}
+.bubble-say {
+    position: absolute;
+    margin-top: -3px;
+    margin-left: 8px;
+    width: 44px;
+    height: 18px;
+    background: url(img/say-bottom.png) transparent no-repeat;
+}
+.bubble-think {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 8px;
+    width: 44px;
+    height: 19px;
+    background: url(img/think-bottom.png) transparent no-repeat;
+}
+.ask-container {
+    position: absolute;
+    display: inline-block;
+    padding: 5px 0px 0px 5px;
+    border-radius: 5px;
+    background: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+}
+.ask-container .ask-field .ask-text-field {
+    width: 405px;
+    height: 16px;
+    font-family: sans-serif;
+    font-weight: light;
+    font-size: 12px;
+    background: #EAEAEA;
+}
+
+.ask-container .ask-button {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 25px;
+    height: 25px;
+    background: url(img/ask-button.png) transparent no-repeat;
+}
+
+

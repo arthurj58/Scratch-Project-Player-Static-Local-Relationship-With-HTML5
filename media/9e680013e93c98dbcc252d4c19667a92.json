@@ -1,0 +1,118 @@
+{
+	"objName": "D-Money Hip-Hop",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "d-money stance",
+			"baseLayerID": -1,
+			"baseLayerMD5": "35ac71b6c61215b321b3c9b38796fd2c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 110,
+			"rotationCenterY": 238
+		},
+		{
+			"costumeName": "d-money top-a",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bbc0f41beb5e99ca0aec18707ba826ad.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 82,
+			"rotationCenterY": 244
+		},
+		{
+			"costumeName": "d-money top-b",
+			"baseLayerID": -1,
+			"baseLayerMD5": "fd67350d1cb769ccbb6874fedbbaa2b5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 218,
+			"rotationCenterY": 232
+		},
+		{
+			"costumeName": "d-money top-c",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9b7e78b83fda88eb6fbc158a418563a4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 230,
+			"rotationCenterY": 240
+		},
+		{
+			"costumeName": "d-money top-d",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2d19c86f2083c6228df375067597b979.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 220,
+			"rotationCenterY": 234
+		},
+		{
+			"costumeName": "d-money chain-a",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e3636ac515c6213c69371014e83b3ebc.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 92,
+			"rotationCenterY": 234
+		},
+		{
+			"costumeName": "d-money chain-b",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ce95a6dc63daed2b46d17a8c69b38a74.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 64,
+			"rotationCenterY": 74
+		},
+		{
+			"costumeName": "d-money chain-c",
+			"baseLayerID": -1,
+			"baseLayerMD5": "15622268671b8a82e04de4d9c4b39461.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 204,
+			"rotationCenterY": 250
+		},
+		{
+			"costumeName": "d-money chain-d",
+			"baseLayerID": -1,
+			"baseLayerMD5": "40467f88405a24137f5a3b2d73eb526c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 78,
+			"rotationCenterY": 238
+		},
+		{
+			"costumeName": "d-money pop-a",
+			"baseLayerID": -1,
+			"baseLayerMD5": "41ba2478c99749c98d92022efd34c188.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 90,
+			"rotationCenterY": 238
+		},
+		{
+			"costumeName": "d-money pop-b",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b010e4dd3ddeeaddf0925e939d602f48.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 100,
+			"rotationCenterY": 244
+		},
+		{
+			"costumeName": "d-money pop-c",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6d0ab0808ba6e13c39f05f21e5f31dcf.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 80,
+			"rotationCenterY": 240
+		}],
+	"currentCostumeIndex": 0,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 1,
+	"direction": 90,
+	"rotationStyle": "normal",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}

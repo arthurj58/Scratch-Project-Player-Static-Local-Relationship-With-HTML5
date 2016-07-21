@@ -1,0 +1,86 @@
+{
+	"objName": "SL Hip-Hop",
+	"sounds": [{
+			"soundName": "dance celebrate",
+			"soundID": -1,
+			"md5": "0edb8fb88af19e6e17d0f8cf64c1d136.wav",
+			"sampleCount": 176401,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "sl toprock-a",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0fcc5cee660b92bb80eab770f2fe371f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 64,
+			"rotationCenterY": 233
+		},
+		{
+			"costumeName": "sl toprock-b",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9e759af8e29d6d8fcf476660fe65f199.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 54,
+			"rotationCenterY": 230
+		},
+		{
+			"costumeName": "sl toprock-c",
+			"baseLayerID": -1,
+			"baseLayerMD5": "688dcb857a279fdea94230a020661f3a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 149,
+			"rotationCenterY": 245
+		},
+		{
+			"costumeName": "sl toprock-d",
+			"baseLayerID": -1,
+			"baseLayerMD5": "fedfc6db1fa4121cea061a033f6b106c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 74,
+			"rotationCenterY": 198
+		},
+		{
+			"costumeName": "sl toprock-e",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3d930bb77adfb8a14e121fdd7d689b6f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 50,
+			"rotationCenterY": 214
+		},
+		{
+			"costumeName": "sl toprock-f",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b5cd7aa4eb517f94634c4baa5c877277.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 110,
+			"rotationCenterY": 200
+		},
+		{
+			"costumeName": "sl pop-a",
+			"baseLayerID": -1,
+			"baseLayerMD5": "149dfc3c2c01c6a9e8702e55b0573f25.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 145,
+			"rotationCenterY": 174
+		},
+		{
+			"costumeName": "sl pop-b",
+			"baseLayerID": -1,
+			"baseLayerMD5": "83cddfdbb4b6bc058d6f8f3f083386c4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 84,
+			"rotationCenterY": 284
+		}],
+	"currentCostumeIndex": 0,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 1,
+	"direction": 90,
+	"rotationStyle": "normal",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}

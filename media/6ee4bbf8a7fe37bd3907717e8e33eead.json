@@ -1,0 +1,35 @@
+{
+	"objName": "Cat1 Flying",
+	"variables": [{
+			"name": "score",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "cat1 flying",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3048194bf6faa9db1eaf65c64b645cd2.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 44,
+			"rotationCenterY": 46
+		}],
+	"currentCostumeIndex": 0,
+	"scratchX": 0,
+	"scratchY": 0,
+	"scale": 1,
+	"direction": 90,
+	"rotationStyle": "normal",
+	"isDraggable": false,
+	"indexInLibrary": 100000,
+	"visible": true,
+	"spriteInfo": {
+	}
+}
