@@ -1,3 +1,7 @@
+# Scratch-Project-Player-Static-Local-Relationship-With-HTML5
+
+自己改造Scratch官方Html5版本播放器的代码，做到本地依赖化，不需要配置任何Node.js环境和外网环境，能直接加载和打开本地的.sb2文件。特别适合七牛云等静态云存储使用，示例为七牛云存储中打开Scratch的html播放器，其中七牛云空间设置index.html为主入口。默认访问1000.json工程文件。即index.html#1000。。然后我提供了另外一个工程20160722154639.json，即访问index.html#20160722154639可以直接打开该工程。具体提取工程的python脚本我也放在自己的github里面，有兴趣的请移步下载使用。
+
 #关于这个
 
 1.使用方法
@@ -49,4 +53,4 @@
 
 相关使用图例
 
-![使用图例]("docs/说明.png")
+![使用图例](docs/截图1.png)
