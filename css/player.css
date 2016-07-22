@@ -2,6 +2,7 @@
    all CSS selectors would be descendants of #wrapper so that the player
    is embeddable.
 */
+
 #player-container {
     position: relative;
     width: 482px;

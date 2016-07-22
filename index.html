@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <meta charset=utf-8>
-<title>魔法图书馆</title>
+<title>Scratch项目播放器</title>
 
 <!-- iPad properties: set width, disable pinch zoom -->
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="viewport" content="user-scalable=no" width="540">
+<meta name="viewport" content="target-densitydpi=device-dpi,width=540,user-scalable=no" width="540">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-<link rel="stylesheet" href="player.css">
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="css/player.css">
 
 <script src="http://ajax.useso.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<style type="text/css">body {
+  width: 578px;
+  padding: 16px;
+  margin: 0 auto;
+  background: #fff;
+  font-family: sans-serif;
+  color: #000;
+}</style>
+
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
 
 <!-- 初始化播放器-->
 <script type="text/javascript">
@@ -47,9 +57,6 @@
     
 </div>
 
-<h1>魔法图书馆播放器</h1>
-<p>欢迎使用魔法图书馆播放器，播放器理论上在移动平台、PC平台都可以自由使用，微信朋友圈和微博页面应该都没有问题，该播放器还在测试之中，有什么bug和不稳定请尽量向我反馈，谢谢。<br><br>凑凑字数看看UI会不会出错，凑凑字数看看UI会不会出错，凑凑字数看看UI会不会出错，凑凑字数看看UI会不会出错，凑凑字数看看UI会不会出错。</p>
-
 <script src="js/util/Timer.js"></script>
 <script src="js/util/OffsetBuffer.js"></script>
 <script src="js/util/Color.js"></script>
@@ -72,3 +79,5 @@
 <script src="js/Interpreter.js"></script>
 <script src="js/Runtime.js"></script>
 <script src="js/Scratch.js"></script>
+
+</body>
